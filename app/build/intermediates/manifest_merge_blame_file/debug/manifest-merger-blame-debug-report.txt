@@ -1,0 +1,203 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.expressrailwaynew"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:4:5-66
+11-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.9.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+14        android:name="com.example.expressrailwaynew.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.9.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.9.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.example.expressrailwaynew.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.9.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.9.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:6:5-95:19
+20        android:allowBackup="true"
+20-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:7:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.9.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+22        android:dataExtractionRules="@xml/data_extraction_rules"
+22-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:8:9-65
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:fullBackupContent="@xml/backup_rules"
+25-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:9:9-54
+26        android:icon="@mipmap/icon"
+26-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:10:9-36
+27        android:label="@string/app_name"
+27-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:11:9-41
+28        android:roundIcon="@mipmap/icon"
+28-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:12:9-41
+29        android:supportsRtl="true"
+29-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:13:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.ExpressRailwayNew" >
+31-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:14:9-55
+32        <activity
+32-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:16:9-22:20
+33            android:name="com.example.expressrailwaynew.ViewHistory"
+33-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:17:13-40
+34            android:exported="false" >
+34-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:18:13-37
+35            <meta-data
+35-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:19:13-21:36
+36                android:name="android.app.lib_name"
+36-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:20:17-52
+37                android:value="" />
+37-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:21:17-33
+38        </activity>
+39        <activity
+39-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:23:9-29:20
+40            android:name="com.example.expressrailwaynew.DashBoard"
+40-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:24:13-38
+41            android:exported="false" >
+41-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:25:13-37
+42            <meta-data
+42-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:19:13-21:36
+43                android:name="android.app.lib_name"
+43-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:20:17-52
+44                android:value="" />
+44-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:21:17-33
+45        </activity>
+46        <activity
+46-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:31:9-37:20
+47            android:name="com.example.expressrailwaynew.Login"
+47-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:32:13-34
+48            android:exported="false" >
+48-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:33:13-37
+49            <meta-data
+49-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:19:13-21:36
+50                android:name="android.app.lib_name"
+50-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:20:17-52
+51                android:value="" />
+51-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:21:17-33
+52        </activity>
+53        <activity
+53-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:39:9-45:20
+54            android:name="com.example.expressrailwaynew.TicketSummary"
+54-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:40:13-42
+55            android:exported="false" >
+55-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:41:13-37
+56            <meta-data
+56-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:19:13-21:36
+57                android:name="android.app.lib_name"
+57-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:20:17-52
+58                android:value="" />
+58-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:21:17-33
+59        </activity>
+60        <activity
+60-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:47:9-53:20
+61            android:name="com.example.expressrailwaynew.BookTicket"
+61-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:48:13-39
+62            android:exported="false" >
+62-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:49:13-37
+63            <meta-data
+63-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:19:13-21:36
+64                android:name="android.app.lib_name"
+64-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:20:17-52
+65                android:value="" />
+65-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:21:17-33
+66        </activity>
+67        <activity
+67-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:55:9-61:20
+68            android:name="com.example.expressrailwaynew.ViewProfile"
+68-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:56:13-40
+69            android:exported="false" >
+69-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:57:13-37
+70            <meta-data
+70-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:19:13-21:36
+71                android:name="android.app.lib_name"
+71-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:20:17-52
+72                android:value="" />
+72-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:21:17-33
+73        </activity>
+74        <activity
+74-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:63:9-69:20
+75            android:name="com.example.expressrailwaynew.CreateProfile"
+75-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:64:13-42
+76            android:exported="false" >
+76-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:65:13-37
+77            <meta-data
+77-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:19:13-21:36
+78                android:name="android.app.lib_name"
+78-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:20:17-52
+79                android:value="" />
+79-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:21:17-33
+80        </activity>
+81        <activity
+81-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:71:9-79:20
+82            android:name="com.example.expressrailwaynew.Launch"
+82-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:72:13-35
+83            android:exported="true" >
+83-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:73:13-36
+84            <intent-filter>
+84-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:74:13-78:29
+85                <action android:name="android.intent.action.MAIN" />
+85-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:75:17-69
+85-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:75:25-66
+86
+87                <category android:name="android.intent.category.LAUNCHER" />
+87-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:77:17-77
+87-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:77:27-74
+88            </intent-filter>
+89        </activity>
+90        <activity
+90-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:81:9-94:20
+91            android:name="com.example.expressrailwaynew.MainActivity"
+91-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:82:13-41
+92            android:exported="true" >
+92-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:83:13-36
+93
+94            <!-- <intent-filter> -->
+95            <!-- <action android:name="android.intent.action.MAIN" /> -->
+96
+97
+98            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+99            <!-- </intent-filter> -->
+100            <meta-data
+100-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:19:13-21:36
+101                android:name="android.app.lib_name"
+101-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:20:17-52
+102                android:value="" />
+102-->D:\SLIIT\EAD\ExpressRailwayNew\app\src\main\AndroidManifest.xml:21:17-33
+103        </activity>
+104
+105        <provider
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+106            android:name="androidx.startup.InitializationProvider"
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+107            android:authorities="com.example.expressrailwaynew.androidx-startup"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+108            android:exported="false" >
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+109            <meta-data
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+111                android:value="androidx.startup" />
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+112            <meta-data
+112-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+113                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+114                android:value="androidx.startup" />
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ASUS\Documents\GitHub\Android-Flight-Reservation-App\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+115        </provider>
+116    </application>
+117
+118</manifest>

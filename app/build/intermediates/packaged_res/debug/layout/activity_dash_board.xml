@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck1"
+    tools:context=".DashBoard">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:text="ExpressRails"
+        android:textColor="#700808"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/trickortrick1"
+        android:gravity="center_horizontal" />
+
+    <!-- Book Ticket Button -->
+    <Button
+        android:id="@+id/btnBookTicket"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:textStyle="bold"
+        android:background="@drawable/dashboard_button_background"
+        android:text="Book Ticket"
+        android:textColor="#03A9F4"
+        android:textSize="25sp"/>
+
+    <!-- Booking History Button -->
+    <Button
+        android:id="@+id/btnBookingHistory"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+
+        android:layout_below="@+id/btnBookTicket"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dashboard_button_background"
+        android:text="Booking History"
+        android:textStyle="bold"
+        android:textColor="#03A9F4"
+        android:textSize="25sp"/>
+
+    <!-- View Profile Button -->
+    <Button
+        android:id="@+id/btnViewProfile"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btnBookingHistory"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:background="@drawable/dashboard_button_background"
+        android:text="View Profile"
+        android:textColor="#03A9F4"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnLgOut"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnViewProfile"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dashboard_button_background"
+        android:text="Logout"
+        android:textColor="@color/colorDanger"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

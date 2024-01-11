@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.expressrailwaynew.Database.DbHandler;
 
@@ -66,14 +67,49 @@ public class ViewProfile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                edtName.getText().toString().trim();
-                edtAge.getText().toString().trim();
-                edtMobileNumber.getText().toString().trim();
+                String name = edtName.getText().toString().trim();
+                String email = edtAge.getText().toString().trim();
+                String mob = edtMobileNumber.getText().toString().trim();
+                String oldnic = edtNic.getText().toString().trim();
 
+                DbHandler dbHandler = new DbHandler(getApplicationContext());
+                boolean isUpdateSuccessful = dbHandler.updateUser(name, email, mob,oldnic);
 
-
-
+                if (isUpdateSuccessful) {
+                    // If the update is successful, navigate to the appropriate activity
+                    Intent toLogin = new Intent(getApplicationContext(), ViewProfile.class);
+                    Toast.makeText(ViewProfile.this, "Update successful", Toast.LENGTH_SHORT).show();
+                    startActivity(toLogin);
+                } else {
+                    Toast.makeText(ViewProfile.this, "Update failed", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
+        // Delete button click listener
+        btn_DeleteProf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String nic = edtNic.getText().toString().trim();
+                DbHandler dbHandler = new DbHandler(getApplicationContext());
+
+                // Call the delete method to delete the user
+                dbHandler.deleteUser(nic);
+
+                // Create an intent to go to the Login activity
+                Intent intent = new Intent(ViewProfile.this, Login.class);
+
+                // Display a Toast message to inform the user
+                Toast.makeText(ViewProfile.this, "User deactivated successfully", Toast.LENGTH_SHORT).show();
+
+                // Start the Login activity
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
     }
 }

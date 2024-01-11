@@ -10,9 +10,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.expressrailwaynew.Database.DbHandler;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class Login extends AppCompatActivity {
+
+    //API
+    TextView data;
+    String URL;
 
     EditText edtLg;
     Button btnLgSubmit;
@@ -22,6 +34,33 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
+
+        //API
+        data = findViewById(R.id.data);
+        URL = "https://worldtimeapi.org/api/timezone/Asia/Colombo";
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, URL, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                String datetime = null;
+                try {
+                    datetime = response.getString("datetime");
+                    data.setText(datetime);
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        Volley.newRequestQueue(this).add(request);
+
+        //API end here
+
+
 
         edtLg = findViewById(R.id.email);
         btnLgSubmit = findViewById(R.id.btnLogin);

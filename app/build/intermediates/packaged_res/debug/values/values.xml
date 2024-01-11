@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stations">
+        <item> Colombo </item>
+        <item>Maradana </item>
+        <item> Polgahawela </item>
+        <item> Peradeniya </item>
+        <item> Hatton </item>
+        <item> Nanu Oya </item>
+        <item> Pattipola </item>
+        <item>Idalgashinna  </item>
+        <item>Haputale </item>
+        <item>Demodara </item>
+        <item>Badulla </item>
+        <item>Kandy </item>
+        <item>Matale  </item>
+        <item>Ukuwela   </item>
+        <item>Wattegama   </item>
+        <item>Kurunegala   </item>
+        <item>Anuradhapura   </item>
+        <item>Jaffna   </item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="colorDanger">#F44336</color>
+    <color name="colorInverted">#ffffff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorTealDark">#00796B</color>
+    <color name="primaryBlue">#673AB7</color>
+    <color name="primaryDarkBlue">#5E35B1</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+    <string name="alert_dialog_two_buttons_title">My Title</string>
+    <string name="app_name">ExpressRailwayNew</string>
+    <string name="prompt_class">Select class</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="prompt_departure_date">Departure date</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_first_name">Full Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="prompt_nic">NIC</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_phone">Phone</string>
+    <string name="prompt_return_date">Return date</string>
+    <string name="prompt_trainfrom">Train from</string>
+    <string name="prompt_trainto">Train to</string>
+    <string name="prompt_traveller">Select Traveller</string>
+    <style name="Base.Theme.ExpressRailwayNew" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="CalendarDateTextAppearance" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="Theme.ExpressRailwayNew" parent="Base.Theme.ExpressRailwayNew"/>
+</resources>

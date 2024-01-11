@@ -129,51 +129,80 @@ public class DbHandler extends SQLiteOpenHelper {
         return userExists;
     }
 
-//    public static Cursor login(SQLiteDatabase db, String email, String password) {
-//        return db.query("ACCOUNT", new String[]{"_id", "EMAIL", "PASSWORD", "ACCOUNT_CLIENT"},
-//                "EMAIL = ? AND PASSWORD = ? ", new String[]{email, password},
-//                null, null, null, null);
+
+
+//    public boolean updateUser (String name , String email , String mobileNumber){
+//
+//        SQLiteDatabase db = getWritableDatabase();
+//// New value for one column
+//
+//        ContentValues values = new ContentValues();
+////        values.put(userProfile.User.COLUMN_nic, nic);
+//        values.put(userProfile.User.COLUMN_name, name);
+//        values.put(userProfile.User.COLUMN_email, email);
+//        values.put(userProfile.User.COLUMN_mobileNumber,mobileNumber );
+//
+//
+//// Which row to update, based on the title
+//        String selection = userProfile.User.COLUMN_nic + " LIKE ?";
+//        String[] selectionArgs = { "MyOldTitle" };
+//
+//        int count = db.update(
+//                userProfile.User.TABLE_NAME,
+//                values,
+//                selection,
+//                selectionArgs);
+//        if(count >=1){
+//            return true;
+//        }
+//        else{
+//            return false;
+//        }
 //    }
 
-
-    public boolean updateUser (String name , String email , String mobileNumber){
-
+    public boolean updateUser(String name, String email, String mobileNumber, String oldNic) {
         SQLiteDatabase db = getWritableDatabase();
-// New value for one column
 
         ContentValues values = new ContentValues();
-//        values.put(userProfile.User.COLUMN_nic, nic);
         values.put(userProfile.User.COLUMN_name, name);
         values.put(userProfile.User.COLUMN_email, email);
-        values.put(userProfile.User.COLUMN_mobileNumber,mobileNumber );
+        values.put(userProfile.User.COLUMN_mobileNumber, mobileNumber);
 
-
-// Which row to update, based on the title
         String selection = userProfile.User.COLUMN_nic + " LIKE ?";
-        String[] selectionArgs = { "MyOldTitle" };
+        String[] selectionArgs = { oldNic }; // Replace with the actual old NIC value you want to match.
 
         int count = db.update(
                 userProfile.User.TABLE_NAME,
                 values,
                 selection,
-                selectionArgs);
-        if(count >=1){
-            return true;
-        }
-        else{
-            return false;
-        }
+                selectionArgs
+        );
+
+        return count >= 1;
     }
-    public void deleteUser(String nic){
+//    public void deleteUser(String nic){
+//        SQLiteDatabase db = getWritableDatabase();
+//
+//        // Define 'where' part of query.
+//        String selection = userProfile.User.COLUMN_nic + " LIKE ?";
+//// Specify arguments in placeholder order.
+//        String[] selectionArgs = { nic };
+//// Issue SQL statement.
+//        int deletedRows = db.delete(userProfile.User.TABLE_NAME, selection, selectionArgs);
+//
+//    }
+
+    public void deleteUser(String nic) {
         SQLiteDatabase db = getWritableDatabase();
 
         // Define 'where' part of query.
-        String selection = userProfile.User.COLUMN_nic + " LIKE ?";
-// Specify arguments in placeholder order.
-        String[] selectionArgs = { nic };
-// Issue SQL statement.
-        int deletedRows = db.delete(userProfile.User.TABLE_NAME, selection, selectionArgs);
+        String selection = userProfile.User.COLUMN_nic + " = ?";
 
+        // Specify arguments in placeholder order.
+        String[] selectionArgs = { nic };
+
+        // Issue SQL statement to delete the user.
+        int deletedRows = db.delete(userProfile.User.TABLE_NAME, selection, selectionArgs);
     }
 
     public List getUser() {
